@@ -5,4 +5,4 @@
 * Quick and Smart Updater for Programmers' Technologies.
 * On Developing stage
 ## Idea
-* I saw the need of a system which can search for the updates availibility for  technology used by us (Developers) and can make changes to it.
+* I saw the need for a software which can search for the updates for dev-techs automatically and can download them.
