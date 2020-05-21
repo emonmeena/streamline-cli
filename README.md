@@ -3,7 +3,7 @@
 * version 2.5.2
 ## About
 * An Open Source, Quick and Smart Updater for Programmers' Technologies.
-* On Developing stage
+* On Developing stage (For Windows only)
 ## Idea
 * >>>.
 ## References
