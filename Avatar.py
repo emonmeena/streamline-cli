@@ -6,13 +6,13 @@ import os
 
 print(" \t Welcome to Avatar ")
 url = 'https://nodejs.org/en/'
-
+techStatus = " Searching for any Tech Updates..."
 stream = os.popen('Node -v')
 output = stream.read()
 output = output.strip()
 # output = str(output)
 # os.system('Node --version')
-print(" Searching for any Tech Updates...")
+print(techStatus)
 try:
     r = requests.get(url)
 except:
@@ -40,7 +40,7 @@ elif(currentVersion == oldVersion):
      exitKey = input(" NodeJS "+oldVersion+" is up to date"+'\n'+" Hit Enter to exit Avatar: ")
 
 else: 
-    downloadSystem = input(" \n Seems like You don't have NodeJS installed on your machine. Download latest release, NodeJS "+currentVersion+" (yes/no): ")
+    downloadSystem = input(" \n Seems like NodeJS is not installed in this machine. Install or Download the latest release, NodeJS "+currentVersion+" (yes/no): ")
     if(downloadSystem == "yes"):
      try:
         downloadFile = webbrowser.open('https://nodejs.org/dist/v12.16.3/node-v12.16.3-x64.msi')
@@ -50,4 +50,4 @@ else:
 print(" Closing Avatar")        
 
 
-
+         
