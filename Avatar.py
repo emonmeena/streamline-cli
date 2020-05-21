@@ -40,7 +40,7 @@ elif(currentVersion == oldVersion):
      exitKey = input(" NodeJS "+oldVersion+" is up to date"+'\n'+" Hit Enter to exit Avatar: ")
 
 else: 
-    downloadSystem = input(" \n Seems like You don't have NodeJS installed on your machine. Download NodeJS "+currentVersion+" (yes/no): ")
+    downloadSystem = input(" \n Seems like You don't have NodeJS installed on your machine. Download latest release, NodeJS "+currentVersion+" (yes/no): ")
     if(downloadSystem == "yes"):
      try:
         downloadFile = webbrowser.open('https://nodejs.org/dist/v12.16.3/node-v12.16.3-x64.msi')
