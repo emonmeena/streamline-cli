@@ -6,3 +6,5 @@
 * On Developing stage
 ## Idea
 * I saw the need for a software which can search for the updates for dev-techs automatically and can download them.
+## References
+* Shell commands in Python Interpreter = https://janakiev.com/blog/python-shell-commands/
