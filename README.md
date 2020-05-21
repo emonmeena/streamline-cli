@@ -1,4 +1,5 @@
 # Avatar Updater
+![]('./Preview/avatar.jpg')
 * version 2.5.2
 ## About
 * An Open Source, Quick and Smart Updater for Programmers' Technologies.
