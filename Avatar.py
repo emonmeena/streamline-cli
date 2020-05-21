@@ -4,9 +4,8 @@ import webbrowser
 
 url = 'https://nodejs.org/en/'
 
-URL = {
+print("Searching for Updates...")
 
-}
 r = requests.get(url)
 
 htmlContent = r.content
@@ -26,6 +25,7 @@ if(currentVersion != oldVersion):
         # print(updateSystem)
         webbrowser.open('https://nodejs.org/dist/v12.16.3/node-v12.16.3-x64.msi')
         oldVersion = currentVersion
+else : exitKey = input("No Updates available for "+oldVersion)        
 print(oldVersion)
 
 
