@@ -9,3 +9,4 @@
 ## References
 * Shell commands in Python Interpreter = https://janakiev.com/blog/python-shell-commands/
 * Checking Internet Connection = https://www.programiz.com/python-programming/exception-handling
+![](https://janakiev.com/blog/python-shell-commands/)
