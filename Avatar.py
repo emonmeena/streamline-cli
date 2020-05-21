@@ -26,7 +26,6 @@ if(currentVersion != oldVersion):
         oldVersion = currentVersion
 else : exitKey = input("No Updates available for NodeJS "+oldVersion+'\n'+"Hit Enter to exit Avatar: ")
 
-
 print("Closing Avatar")        
 
 
