@@ -47,7 +47,6 @@ else:
      except:
         romErr2 = input(" Oops! Internet Connection lost. Reconnect, then try. \n")
     oldVersion = currentVersion
-
 print(" Closing Avatar")        
 
 
