@@ -6,7 +6,6 @@ import os
 
 print(" \t Welcome to Avatar ")
 urlSite = 'https://nodejs.org/en/'
-urlDownload = 'https://nodejs.org/dist/v12.16.3/node-v12.16.3-x64.msi'
 techStatus = " Searching for any Tech Updates..."
 stream = os.popen('Node -v')
 output = stream.read()
@@ -27,6 +26,7 @@ version = str(versionDescription)
 version = version.lstrip()
 currentVersion = "v"+version[0:7]
 oldVersion = output
+urlDownload = 'https://nodejs.org/dist/'+currentVersion+'/node-v12.16.3-x64.msi'
 
 # Defining Input Strings
 errorConnection = " Oops! Internet Connection lost. Reconnect, then try. \n"
