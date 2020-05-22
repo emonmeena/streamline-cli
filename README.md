@@ -3,7 +3,7 @@
 * version 2.5.2
 ## About
 * An Open Source, Quick and Smart Updater for Programmers' Work-Environment.
-* On Developing stage (For Windows OS).
+* On Developing stage (for Windows OS).
 * Command-line tool (GUI in later updates).
 <!-- ## Idea
 * >>>. -->
