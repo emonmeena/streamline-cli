@@ -5,7 +5,8 @@ import os
 # import LogIn
 
 print(" \t Welcome to Avatar ")
-url = 'https://nodejs.org/en/'
+urlNodeJS = 'https://nodejs.org/en/'
+urlJava = 'https://javadl.oracle.com/webapps/download/AutoDL?BundleId=242029_3d5a2bb8f8d4428bbe94aed7ec7ae784'
 techStatus = " Searching for any Tech Updates..."
 stream = os.popen('Node -v')
 output = stream.read()
@@ -14,7 +15,7 @@ output = output.strip()
 # os.system('Node --version')
 print(techStatus)
 try:
-    r = requests.get(url)
+    r = requests.get(urlNodeJS)
 except:
        romErr = input("\n Internet Connection is required \n"+" Hit Enter to exit Avatar")
 htmlContent = r.content
