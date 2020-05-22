@@ -5,8 +5,8 @@ import os
 # import LogIn
 
 print(" \t Welcome to Avatar ")
-urlNodeJS = 'https://nodejs.org/en/'
-urlJava = 'https://javadl.oracle.com/webapps/download/AutoDL?BundleId=242029_3d5a2bb8f8d4428bbe94aed7ec7ae784'
+urlSite = 'https://nodejs.org/en/'
+urlDownload = 'https://nodejs.org/dist/v12.16.3/node-v12.16.3-x64.msi'
 techStatus = " Searching for any Tech Updates..."
 stream = os.popen('Node -v')
 output = stream.read()
@@ -15,7 +15,7 @@ output = output.strip()
 # os.system('Node --version')
 print(techStatus)
 try:
-    r = requests.get(urlNodeJS)
+    r = requests.get(urlSite)
 except:
        romErr = input("\n Internet Connection is required \n"+" Hit Enter to exit Avatar")
 htmlContent = r.content
@@ -28,25 +28,31 @@ version = version.lstrip()
 currentVersion = "v"+version[0:7]
 oldVersion = output
 
+# Defining Input Strings
+errorConnection = " Oops! Internet Connection lost. Reconnect, then try. \n"
+noUpdaterequire = " NodeJS "+oldVersion+" is up to date"+'\n'+" Hit Enter to exit Avatar: "
+update = " We found new updates for NodeJS "+oldVersion+" Download "+currentVersion+" (yes/no): "
+noMatchtoDownload = " \n Seems like NodeJS is not installed in this machine. Install or Download the latest release, NodeJS "+currentVersion+" (yes/no): "
+
 if(currentVersion != oldVersion and len(currentVersion) == len(oldVersion)):
-    updateSystem = input(" We found new updates for NodeJS "+oldVersion+" Download "+currentVersion+" (yes/no): ")
+    updateSystem = input(update)
     if(updateSystem == "yes"):
      try:
-        downloadFile = webbrowser.open('https://nodejs.org/dist/v12.16.3/node-v12.16.3-x64.msi')
+        downloadFile = webbrowser.open(urlDownload)
      except:
-        romErr2 = input(" Oops! Internet Connection lost. Reconnect, than try again later \n")
+        romErr2 = input(errorConnection)
     oldVersion = currentVersion
 
 elif(currentVersion == oldVersion):
-     exitKey = input(" NodeJS "+oldVersion+" is up to date"+'\n'+" Hit Enter to exit Avatar: ")
+     exitKey = input(noUpdaterequire)
 
 else: 
-    downloadSystem = input(" \n Seems like NodeJS is not installed in this machine. Install or Download the latest release, NodeJS "+currentVersion+" (yes/no): ")
+    downloadSystem = input(noMatchtoDownload)
     if(downloadSystem == "yes"):
      try:
-        downloadFile = webbrowser.open('https://nodejs.org/dist/v12.16.3/node-v12.16.3-x64.msi')
+        downloadFile = webbrowser.open(urlDownload)
      except:
-        romErr2 = input(" Oops! Internet Connection lost. Reconnect, then try. \n")
+        romErr2 = input(errorConnection)
     oldVersion = currentVersion
 print(" Closing Avatar")        
 
