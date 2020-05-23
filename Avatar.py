@@ -6,7 +6,7 @@ import os
 
 print(" \t Welcome to Avatar ")
 urlSite = 'https://nodejs.org/en/'
-techStatus = " Searching for any Tech Updates..."
+techStatus = " Searching for new Tech Updates..."
 # System Config
 stream = os.popen('Node -v')
 output = stream.read()
