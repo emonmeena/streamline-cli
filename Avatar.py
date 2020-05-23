@@ -6,9 +6,10 @@ import os
 
 print(" \t Welcome to Avatar ")
 urlSite = 'https://nodejs.org/en/'
+techName = 'Node'
 techStatus = " Searching for new Tech Updates..."
 # System Config
-stream = os.popen('Node -v')
+stream = os.popen( techName+' --version')
 output = stream.read()
 output = output.strip()
 # output = str(output)
@@ -32,9 +33,9 @@ urlDownload = 'https://nodejs.org/dist/'+currentVersion+'/node-'+currentVersion+
 
 # Defining Input Strings
 errorConnection = " Oops! Internet Connection lost. Reconnect, then try. \n"
-noUpdaterequire = " NodeJS "+oldVersion+" is up to date"+'\n'+" Hit Enter to exit Avatar: "
-update = " We found new updates for NodeJS "+oldVersion+" Download "+currentVersion+" [y/n]: "
-noMatchtoDownload = " \n Seems like NodeJS is not installed in this machine. Install or Download the latest release, NodeJS "+currentVersion+" [y/n]: "
+noUpdaterequire = " "+techName+oldVersion+" is up to date"+'\n'+" Hit Enter to exit Avatar: "
+update = " We found new updates for "+techName+oldVersion+" Download "+currentVersion+" [y/n]: "
+noMatchtoDownload = " \n Seems like "+techName+" is not installed in this machine. Install or Download the latest release, "+techName+"currentVersion"+" [y/n]: "
 
 # Checking for Updates
 if(currentVersion != oldVersion and len(currentVersion) == len(oldVersion)):
