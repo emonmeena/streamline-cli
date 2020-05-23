@@ -34,13 +34,13 @@ urlDownload = 'https://nodejs.org/dist/'+currentVersion+'/node-'+currentVersion+
 # Defining Input Strings
 errorConnection = " Oops! Internet Connection lost. Reconnect, then try. \n"
 noUpdaterequire = " "+techName+oldVersion+" is up to date"+'\n'+" Hit Enter to exit Avatar: "
-update = " We found new updates for "+techName+oldVersion+" Download "+currentVersion+" [y/n]: "
-noMatchtoDownload = " \n Seems like "+techName+" is not installed in this machine. Install or Download the latest release, "+techName+"currentVersion"+" [y/n]: "
+update = " We found new updates for "+techName+" "+oldVersion+" Download "+currentVersion+" [yes/no]: "
+noMatchtoDownload = " \n Seems like "+techName+" is not installed in this machine. Install or Download the latest release, "+techName+"currentVersion"+" [yes/no]: "
 
 # Checking for Updates
 if(currentVersion != oldVersion and len(currentVersion) == len(oldVersion)):
     updateSystem = input(update)
-    if(updateSystem == "y"):
+    if(updateSystem == "yes"):
      try:
         downloadFile = webbrowser.open(urlDownload)
      except:
