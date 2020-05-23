@@ -2,9 +2,9 @@
 ![](Preview/avtaar.jpg)
 * version 2.5.2
 ## About
-* An Open Source, Quick and Smart Updater for Programmers' Work-Environment.
+* An open source, quick and smart updater for programming environment.
 * On Developing stage (for Windows OS).
-* Command-line tool (GUI in later updates).
+* Command-line tool (GUI promised in later updates).
 <!-- ## Idea
 * >>>. -->
 ## References
