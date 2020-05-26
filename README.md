@@ -4,7 +4,7 @@
 ## About
 * An open source, quick and smart updater for programming environment.
 * On Developing stage (for Windows OS).
-* Command-line tool (GUI promised in later updates).
+* Command-line tool (GUI promised in later versions).
 <!-- ## Idea
 * >>>. -->
 ## References
