@@ -1,5 +1,4 @@
 # Avatar Updater
-![](Preview/avtaar.jpg)
 * version 2.5.2
 ## About
 * An open source, quick and smart updater for programming environment.
